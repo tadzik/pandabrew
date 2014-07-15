@@ -24,7 +24,7 @@ sub mysay(*@args) {
 }
 
 my $rakudover;
-my $currentver = $*PERL<compiler><ver>;
+my $currentver = $*PERL.compiler.version;
 my $brewdir = "{File::HomeDir.my_home}/.pandabrew";
 my $olddir = cwd;
 
